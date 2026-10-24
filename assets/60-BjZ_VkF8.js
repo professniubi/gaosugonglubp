@@ -1,0 +1,1 @@
+var e=``+new URL(`60-DynIF1g1.png`,import.meta.url).href;export{e as default};

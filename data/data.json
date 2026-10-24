@@ -1,0 +1,1059 @@
+{
+  "pageTitle": "高速公路边坡监测预警指挥中心",
+  "moduleNames": {
+    "slopeRiskLevelDistribution": "边坡风险等级分布",
+    "inspectionTaskExecution": "巡检任务执行情况",
+    "realtimeRiskAlerts": "实时风险告警事件",
+    "monitoringCoreOverview": "边坡监测核心指标",
+    "highwaySlopeSpatialSituation": "高速公路边坡监测空间态势",
+    "slopeDisplacementTrend": "重点边坡位移变化趋势",
+    "rainfallSlopeResponse": "降雨量与边坡响应关联分析",
+    "slopeTypeDistribution": "边坡类型分布",
+    "roadRiskIndexRanking": "各路段风险指数排行",
+    "keyRiskSlopeList": "重点风险边坡清单"
+  },
+  "moduleData": {
+    "slopeRiskLevelDistribution": {
+      "name": "边坡风险等级分布",
+      "unit": "处",
+      "centerValue": "286",
+      "centerLabel": "监测边坡",
+      "list": [
+        {
+          "name": "低风险",
+          "value": 168,
+          "color": "#21e6ad"
+        },
+        {
+          "name": "一般风险",
+          "value": 78,
+          "color": "#25c9ff"
+        },
+        {
+          "name": "较高风险",
+          "value": 27,
+          "color": "#ffca62"
+        },
+        {
+          "name": "高风险",
+          "value": 13,
+          "color": "#ff5368"
+        }
+      ]
+    },
+    "inspectionTaskExecution": {
+      "name": "巡检任务执行情况",
+      "unit": "次",
+      "yName": "任务数",
+      "xData": [
+        "人工巡检",
+        "无人机巡查",
+        "车辆巡查",
+        "专项复核"
+      ],
+      "series1": {
+        "name": "计划任务",
+        "data": [
+          36,
+          18,
+          24,
+          12
+        ]
+      },
+      "series2": {
+        "name": "已完成",
+        "data": [
+          33,
+          16,
+          22,
+          9
+        ]
+      }
+    },
+    "realtimeRiskAlerts": {
+      "name": "实时风险告警事件",
+      "list": [
+        {
+          "title": "K128+600 边坡位移速率异常",
+          "orderNo": "GNSS-12806 · 位移速率 4.8 mm/h",
+          "date": "16:24:36",
+          "levelType": "一级预警"
+        },
+        {
+          "title": "K096+200 降雨量超阈值",
+          "orderNo": "雨量站 RAIN-0962 · 1小时降雨 42 mm",
+          "date": "16:21:08",
+          "levelType": "二级预警"
+        },
+        {
+          "title": "K173+800 裂缝扩展速率异常",
+          "orderNo": "裂缝计 CRK-1738 · 裂缝变化 2.6 mm",
+          "date": "16:18:42",
+          "levelType": "二级预警"
+        },
+        {
+          "title": "K211+400 监测设备通信异常",
+          "orderNo": "设备 INC-2114 · 通信中断",
+          "date": "16:15:20",
+          "levelType": "三级预警"
+        },
+        {
+          "title": "K245+100 累计降雨接近阈值",
+          "orderNo": "雨量站 RAIN-2451 · 累计降雨 68 mm",
+          "date": "16:09:55",
+          "levelType": "二级预警"
+        },
+        {
+          "title": "K308+500 巡检任务已闭环",
+          "orderNo": "巡检单 XJ-3085 · 处置完成待归档",
+          "date": "15:58:10",
+          "levelType": "已处置"
+        }
+      ]
+    },
+    "monitoringCoreOverview": {
+      "name": "边坡监测核心指标",
+      "list": [
+        {
+          "name": "纳入监测边坡",
+          "value": 286,
+          "unit": "处",
+          "precision": 0,
+          "comma": true,
+          "icon": "icon-jiance"
+        },
+        {
+          "name": "在线监测设备",
+          "value": 1862,
+          "unit": "台",
+          "precision": 0,
+          "comma": true,
+          "icon": "icon-zaixian"
+        },
+        {
+          "name": "今日监测数据",
+          "value": 128.6,
+          "unit": "万条",
+          "precision": 1,
+          "comma": false,
+          "icon": "icon-compute-available"
+        },
+        {
+          "name": "当前预警边坡",
+          "value": 12,
+          "unit": "处",
+          "precision": 0,
+          "comma": true,
+          "icon": "icon-yujing"
+        }
+      ]
+    },
+    "highwaySlopeSpatialSituation": {
+      "name": "高速公路边坡监测空间态势",
+      "projectName": "G5京昆高速雅安段 · 边坡安全监测",
+      "center": [
+        29.994,
+        103.100
+      ],
+      "zoom": 13,
+      "stats": [
+        {
+          "label": "监测路段",
+          "value": "428.6",
+          "unit": "km"
+        },
+        {
+          "label": "监测边坡",
+          "value": "286",
+          "unit": "处"
+        },
+        {
+          "label": "预警点位",
+          "value": "12",
+          "unit": "处"
+        }
+      ],
+      "slopes": [
+        {
+          "id": "SL-K096-200",
+          "name": "K096+200",
+          "code": "K096+200",
+          "level": "中风险",
+          "warnLevel": "二级预警",
+          "slopeType": "土质边坡",
+          "riskIndex": 78.2,
+          "displacement": 4.2,
+          "rainfall1h": 42,
+          "deviceCount": 8,
+          "status": "待复核",
+          "desc": "坡面局部渗水，雨量站1小时降雨42mm，位移速率0.9mm/h",
+          "lat": 30.041015,
+          "lng": 103.003623,
+          "coords": [
+            [
+              103.000973,
+              30.041415
+            ],
+            [
+              103.001473,
+              30.042615
+            ],
+            [
+              103.006273,
+              30.040615
+            ],
+            [
+              103.005773,
+              30.039765
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K128-600",
+          "name": "K128+600",
+          "code": "K128+600",
+          "level": "高风险",
+          "warnLevel": "一级预警",
+          "slopeType": "岩质边坡",
+          "riskIndex": 91.6,
+          "displacement": 6.3,
+          "rainfall1h": 58,
+          "deviceCount": 12,
+          "status": "处理中",
+          "desc": "GNSS位移速率4.8mm/h，累计位移超预警阈值，已启动应急处置",
+          "lat": 30.025676,
+          "lng": 103.035492,
+          "coords": [
+            [
+              103.03282,
+              30.025882
+            ],
+            [
+              103.033231,
+              30.027115
+            ],
+            [
+              103.038164,
+              30.025471
+            ],
+            [
+              103.037753,
+              30.024649
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K173-800",
+          "name": "K173+800",
+          "code": "K173+800",
+          "level": "中风险",
+          "warnLevel": "二级预警",
+          "slopeType": "土岩混合",
+          "riskIndex": 72.5,
+          "displacement": 5.1,
+          "rainfall1h": 35,
+          "deviceCount": 10,
+          "status": "已派单",
+          "desc": "裂缝计监测到裂缝变化2.6mm，扩展速率持续上升",
+          "lat": 30.016244,
+          "lng": 103.070748,
+          "coords": [
+            [
+              103.068076,
+              30.016449
+            ],
+            [
+              103.068487,
+              30.017682
+            ],
+            [
+              103.07342,
+              30.016038
+            ],
+            [
+              103.073009,
+              30.015216
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K211-400",
+          "name": "K211+400",
+          "code": "K211+400",
+          "level": "低风险",
+          "warnLevel": "正常",
+          "slopeType": "土质边坡",
+          "riskIndex": 46.8,
+          "displacement": 2.4,
+          "rainfall1h": 18,
+          "deviceCount": 7,
+          "status": "待巡检",
+          "desc": "设备通信短时中断已恢复，坡体位移稳定",
+          "lat": 30.004556,
+          "lng": 103.098852,
+          "coords": [
+            [
+              103.09618,
+              30.004762
+            ],
+            [
+              103.096591,
+              30.005995
+            ],
+            [
+              103.101524,
+              30.004351
+            ],
+            [
+              103.101113,
+              30.003529
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K245-100",
+          "name": "K245+100",
+          "code": "K245+100",
+          "level": "中风险",
+          "warnLevel": "三级预警",
+          "slopeType": "岩质边坡",
+          "riskIndex": 58.4,
+          "displacement": 3.6,
+          "rainfall1h": 68,
+          "deviceCount": 9,
+          "status": "监测中",
+          "desc": "累计降雨68mm，坡面排水沟水位上涨，加强监测",
+          "lat": 29.997684,
+          "lng": 103.126428,
+          "coords": [
+            [
+              103.123756,
+              29.997889
+            ],
+            [
+              103.124167,
+              29.999122
+            ],
+            [
+              103.1291,
+              29.997478
+            ],
+            [
+              103.128689,
+              29.996656
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K308-500",
+          "name": "K308+500",
+          "code": "K308+500",
+          "level": "低风险",
+          "warnLevel": "正常",
+          "slopeType": "高填方边坡",
+          "riskIndex": 28.6,
+          "displacement": 1.6,
+          "rainfall1h": 12,
+          "deviceCount": 6,
+          "status": "正常",
+          "desc": "位移速率0.2mm/h，各项监测指标平稳",
+          "lat": 29.985356,
+          "lng": 103.156452,
+          "coords": [
+            [
+              103.15378,
+              29.985562
+            ],
+            [
+              103.154191,
+              29.986795
+            ],
+            [
+              103.159124,
+              29.985151
+            ],
+            [
+              103.158713,
+              29.984329
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K068-400",
+          "name": "K068+400",
+          "code": "K068+400",
+          "level": "低风险",
+          "warnLevel": "正常",
+          "slopeType": "土质边坡",
+          "riskIndex": 34.2,
+          "displacement": 1.9,
+          "rainfall1h": 15,
+          "deviceCount": 5,
+          "status": "正常",
+          "desc": "坡体稳定，监测数据正常",
+          "lat": 30.045815,
+          "lng": 102.992103,
+          "coords": [
+            [
+              102.989453,
+              30.046215
+            ],
+            [
+              102.989953,
+              30.047415
+            ],
+            [
+              102.994753,
+              30.045415
+            ],
+            [
+              102.994253,
+              30.044565
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K156-300",
+          "name": "K156+300",
+          "code": "K156+300",
+          "level": "中风险",
+          "warnLevel": "三级预警",
+          "slopeType": "土质边坡",
+          "riskIndex": 62.1,
+          "displacement": 3.1,
+          "rainfall1h": 46,
+          "deviceCount": 8,
+          "status": "监测中",
+          "desc": "连续降雨导致土体含水率上升，位移略有增大",
+          "lat": 30.019916,
+          "lng": 103.052772,
+          "coords": [
+            [
+              103.0501,
+              30.020122
+            ],
+            [
+              103.050511,
+              30.021355
+            ],
+            [
+              103.055444,
+              30.019711
+            ],
+            [
+              103.055033,
+              30.018889
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K188-900",
+          "name": "K188+900",
+          "code": "K188+900",
+          "level": "低风险",
+          "warnLevel": "正常",
+          "slopeType": "土岩混合",
+          "riskIndex": 41.5,
+          "displacement": 2.2,
+          "rainfall1h": 22,
+          "deviceCount": 6,
+          "status": "正常",
+          "desc": "监测指标在正常区间波动",
+          "lat": 30.012404,
+          "lng": 103.082268,
+          "coords": [
+            [
+              103.079596,
+              30.012609
+            ],
+            [
+              103.080007,
+              30.013842
+            ],
+            [
+              103.08494,
+              30.012198
+            ],
+            [
+              103.084529,
+              30.011376
+            ]
+          ],
+          "updateTime": "16:24:36"
+        },
+        {
+          "id": "SL-K276-700",
+          "name": "K276+700",
+          "code": "K276+700",
+          "level": "中风险",
+          "warnLevel": "三级预警",
+          "slopeType": "土岩混合",
+          "riskIndex": 55.3,
+          "displacement": 3.3,
+          "rainfall1h": 51,
+          "deviceCount": 7,
+          "status": "待巡检",
+          "desc": "坡脚排水不畅，雨后位移小幅增长",
+          "lat": 29.990476,
+          "lng": 103.141092,
+          "coords": [
+            [
+              103.13842,
+              29.990682
+            ],
+            [
+              103.138831,
+              29.991915
+            ],
+            [
+              103.143764,
+              29.990271
+            ],
+            [
+              103.143353,
+              29.989449
+            ]
+          ],
+          "updateTime": "16:24:36"
+        }
+      ],
+      "devices": [
+        {
+          "id": "GNSS-12806",
+          "name": "GNSS-12806",
+          "type": "gnss",
+          "deviceType": "GNSS位移监测站",
+          "slope": "K128+600",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "位移速率 4.8 mm/h",
+          "lat": 30.027289,
+          "lng": 103.03603,
+          "desc": "GNSS位移监测站 · 所属边坡 K128+600 · 位移速率 4.8 mm/h"
+        },
+        {
+          "id": "GNSS-12807",
+          "name": "GNSS-12807",
+          "type": "gnss",
+          "deviceType": "GNSS位移监测站",
+          "slope": "K128+600",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "位移速率 4.5 mm/h",
+          "lat": 30.025286,
+          "lng": 103.038562,
+          "desc": "GNSS位移监测站 · 所属边坡 K128+600 · 位移速率 4.5 mm/h"
+        },
+        {
+          "id": "CRK-1738",
+          "name": "CRK-1738",
+          "type": "crack",
+          "deviceType": "裂缝计",
+          "slope": "K173+800",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "裂缝变化 2.6 mm",
+          "lat": 30.015736,
+          "lng": 103.071005,
+          "desc": "裂缝计 · 所属边坡 K173+800 · 裂缝变化 2.6 mm"
+        },
+        {
+          "id": "CRK-1739",
+          "name": "CRK-1739",
+          "type": "crack",
+          "deviceType": "裂缝计",
+          "slope": "K173+800",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "裂缝变化 2.1 mm",
+          "lat": 30.013863,
+          "lng": 103.072514,
+          "desc": "裂缝计 · 所属边坡 K173+800 · 裂缝变化 2.1 mm"
+        },
+        {
+          "id": "INC-2114",
+          "name": "INC-2114",
+          "type": "inclinometer",
+          "deviceType": "深部测斜仪",
+          "slope": "K211+400",
+          "status": "offline",
+          "signal": "通信中断",
+          "updateTime": "16:24:36",
+          "metric": "深部位移 1.2 mm",
+          "lat": 30.006359,
+          "lng": 103.099453,
+          "desc": "深部测斜仪 · 所属边坡 K211+400 · 深部位移 1.2 mm"
+        },
+        {
+          "id": "RAIN-0962",
+          "name": "RAIN-0962",
+          "type": "rain",
+          "deviceType": "雨量监测站",
+          "slope": "K096+200",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "1小时雨量 42 mm",
+          "lat": 30.040646,
+          "lng": 103.003469,
+          "desc": "雨量监测站 · 所属边坡 K096+200 · 1小时雨量 42 mm"
+        },
+        {
+          "id": "RAIN-2451",
+          "name": "RAIN-2451",
+          "type": "rain",
+          "deviceType": "雨量监测站",
+          "slope": "K245+100",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "1小时雨量 15 mm",
+          "lat": 29.995976,
+          "lng": 103.125859,
+          "desc": "雨量监测站 · 所属边坡 K245+100 · 1小时雨量 15 mm"
+        },
+        {
+          "id": "INC-1563",
+          "name": "INC-1563",
+          "type": "inclinometer",
+          "deviceType": "深部测斜仪",
+          "slope": "K156+300",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "深部位移 2.8 mm",
+          "lat": 30.021529,
+          "lng": 103.05331,
+          "desc": "深部测斜仪 · 所属边坡 K156+300 · 深部位移 2.8 mm"
+        },
+        {
+          "id": "RAIN-2767",
+          "name": "RAIN-2767",
+          "type": "rain",
+          "deviceType": "雨量监测站",
+          "slope": "K276+700",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "1小时雨量 12 mm",
+          "lat": 29.992184,
+          "lng": 103.141661,
+          "desc": "雨量监测站 · 所属边坡 K276+700 · 1小时雨量 12 mm"
+        },
+        {
+          "id": "CAM-3085",
+          "name": "CAM-3085",
+          "type": "camera",
+          "deviceType": "视频监控",
+          "slope": "K308+500",
+          "status": "online",
+          "signal": "光纤 在线",
+          "updateTime": "16:24:36",
+          "metric": "视频通道正常",
+          "lat": 29.985546,
+          "lng": 103.156515,
+          "desc": "视频监控 · 所属边坡 K308+500 · 视频通道正常"
+        },
+        {
+          "id": "GNSS-0684",
+          "name": "GNSS-0684",
+          "type": "gnss",
+          "deviceType": "GNSS位移监测站",
+          "slope": "K068+400",
+          "status": "online",
+          "signal": "4G 在线",
+          "updateTime": "16:24:36",
+          "metric": "位移速率 0.2 mm/h",
+          "lat": 30.045538,
+          "lng": 102.991988,
+          "desc": "GNSS位移监测站 · 所属边坡 K068+400 · 位移速率 0.2 mm/h"
+        },
+        {
+          "id": "CRK-1889",
+          "name": "CRK-1889",
+          "type": "crack",
+          "deviceType": "裂缝计",
+          "slope": "K188+900",
+          "status": "offline",
+          "signal": "通信中断",
+          "updateTime": "16:24:36",
+          "metric": "裂缝变化 0.8 mm",
+          "lat": 30.010601,
+          "lng": 103.081667,
+          "desc": "裂缝计 · 所属边坡 K188+900 · 裂缝变化 0.8 mm"
+        }
+      ],
+      "routes": [
+        {
+          "id": "G5",
+          "name": "G5京昆高速主线",
+          "roadType": "main",
+          "coords": [
+            [
+              102.984,
+              30.048
+            ],
+            [
+              103.008,
+              30.038
+            ],
+            [
+              103.032,
+              30.028
+            ],
+            [
+              103.056,
+              30.02
+            ],
+            [
+              103.08,
+              30.012
+            ],
+            [
+              103.104,
+              30.004
+            ],
+            [
+              103.128,
+              29.996
+            ],
+            [
+              103.152,
+              29.988
+            ],
+            [
+              103.176,
+              29.98
+            ]
+          ]
+        },
+        {
+          "id": "S-01",
+          "name": "雅安连接线",
+          "roadType": "link",
+          "coords": [
+            [
+              103.012,
+              30.062
+            ],
+            [
+              103.032,
+              30.048
+            ],
+            [
+              103.052,
+              30.036
+            ],
+            [
+              103.072,
+              30.024
+            ]
+          ]
+        },
+        {
+          "id": "X-02",
+          "name": "县道接驳段",
+          "roadType": "link",
+          "coords": [
+            [
+              103.1,
+              30.026
+            ],
+            [
+              103.116,
+              30.012
+            ],
+            [
+              103.128,
+              29.996
+            ]
+          ]
+        }
+      ],
+      "zones": [
+        {
+          "id": "Z-1",
+          "name": "北山高边坡群",
+          "lat": 30.0435,
+          "lng": 102.9965
+        },
+        {
+          "id": "Z-2",
+          "name": "隧道连接段",
+          "lat": 30.0305,
+          "lng": 103.052
+        },
+        {
+          "id": "Z-3",
+          "name": "东部丘陵区",
+          "lat": 29.9925,
+          "lng": 103.15
+        }
+      ]
+    },
+    "slopeDisplacementTrend": {
+      "name": "重点边坡位移变化趋势",
+      "monitorPoint": "K128+600",
+      "unit": "mm",
+      "xData": [
+        "08:00",
+        "09:00",
+        "10:00",
+        "11:00",
+        "12:00",
+        "13:00",
+        "14:00",
+        "15:00",
+        "16:00"
+      ],
+      "series1": {
+        "name": "累计位移",
+        "unit": "mm",
+        "data": [
+          2.1,
+          2.3,
+          2.5,
+          2.8,
+          3.1,
+          3.6,
+          4.2,
+          5.1,
+          6.3
+        ]
+      },
+      "series2": {
+        "name": "预警阈值",
+        "unit": "mm",
+        "data": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    "rainfallSlopeResponse": {
+      "name": "降雨量与边坡响应关联分析",
+      "unit": "mm",
+      "xData": [
+        "17时",
+        "19时",
+        "21时",
+        "23时",
+        "01时",
+        "03时",
+        "05时",
+        "07时",
+        "09时",
+        "11时",
+        "13时",
+        "15时"
+      ],
+      "series1": {
+        "name": "小时降雨",
+        "unit": "mm",
+        "data": [
+          0,
+          1,
+          2,
+          4,
+          7,
+          15,
+          21,
+          17,
+          12,
+          8,
+          4,
+          2
+        ]
+      },
+      "series2": {
+        "name": "位移变化",
+        "unit": "mm",
+        "data": [
+          1.1,
+          1.1,
+          1.2,
+          1.2,
+          1.4,
+          1.7,
+          2.2,
+          2.9,
+          3.4,
+          4.1,
+          4.8,
+          6.3
+        ]
+      }
+    },
+    "slopeTypeDistribution": {
+      "name": "边坡类型分布",
+      "unit": "处",
+      "list": [
+        {
+          "name": "土质边坡",
+          "value": 92,
+          "color": "#25c9ff"
+        },
+        {
+          "name": "岩质边坡",
+          "value": 76,
+          "color": "#21e6ad"
+        },
+        {
+          "name": "土岩混合",
+          "value": 65,
+          "color": "#ffca62"
+        },
+        {
+          "name": "高填方边坡",
+          "value": 53,
+          "color": "#b58cff"
+        }
+      ]
+    },
+    "roadRiskIndexRanking": {
+      "name": "各路段风险指数排行",
+      "seriesName": "风险指数",
+      "unit": "",
+      "list": [
+        {
+          "name": "K128+600",
+          "value": 91.6
+        },
+        {
+          "name": "K096+200",
+          "value": 78.2
+        },
+        {
+          "name": "K173+800",
+          "value": 72.5
+        },
+        {
+          "name": "K156+300",
+          "value": 62.1
+        },
+        {
+          "name": "K245+100",
+          "value": 58.4
+        },
+        {
+          "name": "K211+400",
+          "value": 46.8
+        }
+      ]
+    },
+    "keyRiskSlopeList": {
+      "name": "重点风险边坡清单",
+      "head": [
+        {
+          "title": "边坡编号",
+          "flex": 1.15
+        },
+        {
+          "title": "风险等级",
+          "flex": 0.95
+        },
+        {
+          "title": "边坡类型",
+          "flex": 1.05
+        },
+        {
+          "title": "风险指数",
+          "flex": 1.15
+        },
+        {
+          "title": "累计位移",
+          "flex": 0.95
+        },
+        {
+          "title": "处置状态",
+          "flex": 0.85
+        }
+      ],
+      "list": [
+        {
+          "code": "K128+600",
+          "level": "高风险",
+          "type": "岩质边坡",
+          "riskIndex": 91.6,
+          "offset": "6.3 mm",
+          "status": "处理中"
+        },
+        {
+          "code": "K096+200",
+          "level": "中风险",
+          "type": "土质边坡",
+          "riskIndex": 78.2,
+          "offset": "4.2 mm",
+          "status": "待复核"
+        },
+        {
+          "code": "K173+800",
+          "level": "中风险",
+          "type": "土岩混合",
+          "riskIndex": 72.5,
+          "offset": "5.1 mm",
+          "status": "已派单"
+        },
+        {
+          "code": "K156+300",
+          "level": "中风险",
+          "type": "土质边坡",
+          "riskIndex": 62.1,
+          "offset": "3.1 mm",
+          "status": "监测中"
+        },
+        {
+          "code": "K245+100",
+          "level": "中风险",
+          "type": "岩质边坡",
+          "riskIndex": 58.4,
+          "offset": "3.6 mm",
+          "status": "监测中"
+        },
+        {
+          "code": "K211+400",
+          "level": "低风险",
+          "type": "土质边坡",
+          "riskIndex": 46.8,
+          "offset": "2.4 mm",
+          "status": "待巡检"
+        },
+        {
+          "code": "K276+700",
+          "level": "中风险",
+          "type": "土岩混合",
+          "riskIndex": 55.3,
+          "offset": "3.3 mm",
+          "status": "待巡检"
+        },
+        {
+          "code": "K308+500",
+          "level": "低风险",
+          "type": "高填方边坡",
+          "riskIndex": 28.6,
+          "offset": "1.6 mm",
+          "status": "正常"
+        }
+      ]
+    }
+  }
+}

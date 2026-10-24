@@ -1,0 +1,1 @@
+var e=``+new URL(`27-CPP4m4DA.png`,import.meta.url).href;export{e as default};
